@@ -1,0 +1,33 @@
+mixin accordions(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  div(class=spec.__class)&attributes(attributes)
+    #accordion.panel-group(role='tablist', aria-multiselectable='true')
+      .panel.panel-default
+        #headingOne.panel-heading(role='tab')
+          h5.panel-title
+            a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+              | Accordion Item One
+        #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+          .panel-body
+            p
+              | We're both adults. I can't pretend I don't know that person is you. I want there to be no confusion. I know I owe you my life. And more than that, I respect the strategy.
+      .panel.panel-default
+        #headingTwo.panel-heading(role='tab')
+          h5.panel-title
+            a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+              | Accordion Item Two
+        #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+          .panel-body
+            p
+              | In your position, I would have done the same. One issue, which troubles me, I don't know what happens when our three-month contract ends. You know why I do this. I want security for my family.
+      .panel.panel-default
+        #headingThree.panel-heading(role='tab')
+          h5.panel-title
+            a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+              | Accordion Item Three
+        #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+          .panel-body
+            p
+              | Who are you talking to right now? Who is it you think you see? Do you know how much I make a year? I mean, even if I told you, you wouldn't believe it. Do you know what would happen if I suddenly decided to stop going into work?

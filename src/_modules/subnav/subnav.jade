@@ -1,0 +1,10 @@
+mixin subnav(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  div(class=spec.__class)&attributes(attributes)
+    nav.sub-nav.row(role='navigation')
+      a.active(href='#') Active Link
+      a(href='#') Inactive Link 1
+      a(href='#') Inactive Link 2
+      a(href='#') Inactive Link 3

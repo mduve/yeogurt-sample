@@ -27,7 +27,7 @@ block content
               each val, key in dash
                 unless categoryItems[val.category] === val.category
                   li(
-                    class='#{val.category.toLowerCase() === "page" ? "active" : ""} #{val.category}',
+                    class='#{val.category.toLowerCase() === "module" ? "active" : ""} #{val.category}',
                     data-category=val.category
                   )
                     button.font-black(type='button')= val.category
@@ -43,13 +43,14 @@ block content
 
       div.content
         div.main-logo
-            h3 [Logo]
+            h3
+              img.logo(src="../images/iaa-logo.svg", width="75px")
 
         //- Dashboard list items
         ul.item-list
           each val, key in dash
             unless key === 'statuses'
-              li(class='#{val.category} #{val.status} #{val.category.toLowerCase() === "page" ? "" : "hide"}')
+              li(class='#{val.category} #{val.status} #{val.category.toLowerCase() === "module" ? "" : "hide"}')
                 a(href=val.link)= val.name
   else
     h1 No dashboard data supplied!

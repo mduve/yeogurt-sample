@@ -1,0 +1,21 @@
+.breadcrumb {
+    margin-bottom: 1.5rem;
+    border-radius: .25rem;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+    position: relative;
+    margin-right: 0.5rem;
+}
+
+.breadcrumb-item + .breadcrumb-item:before {
+    display: inline-block;
+    content: "";
+    margin-right: 0.6rem;
+    margin-top: 0.4rem;
+    vertical-align: top;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: transparent url("data:image/svg+xml,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' fill='%23999999' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='1.414'%3E%3Cpath d='M11.709 44.702a1.944 1.944 0 0 0 0 2.732 1.902 1.902 0 0 0 2.707 0l21.875-22.069a1.944 1.944 0 0 0 0-2.732L14.416.565a1.904 1.904 0 0 0-2.707 0 1.944 1.944 0 0 0 0 2.732l19.95 20.704-19.95 20.701z'/%3E%3C/svg%3E") no-repeat left top;
+}

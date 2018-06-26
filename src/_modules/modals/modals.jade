@@ -1,0 +1,40 @@
+<!--
+mixin modals(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  div(class=spec.__class)&attributes(attributes)
+    #defaultModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='defaultModal', data-backdrop='static')
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            h3#myModalLabel.modal-title Modal title
+          .modal-body
+            p= bodyText
+          .modal-footer
+            .btn-container.pull-left
+              button.btn.btn-md.btn-cancel(type='button', data-dismiss='modal') Cancel
+            .btn-container.pull-right
+              button.btn.btn-md.btn-secondary.add-content(type='button') Add Content
+              button.btn.btn-md.btn-primary(type='button') Save changes
+
+-->
+
+
+
+mixin modals(bodyText)
+
+  div
+    #defaultModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='defaultModal', data-backdrop='static')
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            h3#myModalLabel.modal-title Modal title
+          .modal-body
+            p= bodyText
+          .modal-footer
+            .btn-container.pull-left
+              button.btn.btn-md.btn-cancel(type='button', data-dismiss='modal') Cancel
+            .btn-container.pull-right
+              button.btn.btn-md.btn-secondary.add-content(type='button') Add Content
+              button.btn.btn-md.btn-primary(type='button') Save changes

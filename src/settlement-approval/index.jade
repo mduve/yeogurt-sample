@@ -1,0 +1,20 @@
+extends ../_layouts/base
+
+include ../_modules/buttons/buttons
+include ../_modules/modals/modals
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  p settlement-approval page
+    a(href='../../dashboard') Dashboard
+
+  button.btn.btn-md.btn-secondary(type='button', data-toggle='modal', data-target='#defaultModal') Launch Default Modal
+
+
+  //
+    +modals(class='test', bodyText='watermelon')
+
+  +modals("watermelon")

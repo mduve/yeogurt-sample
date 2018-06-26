@@ -1,0 +1,70 @@
+/*ACCORDION COLLAPSIBLE STYLES*/
+
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}
+tr.collapse.in {
+  display: table-row;
+}
+tbody.collapse.in {
+  display: table-row-group;
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: .35s;
+       -o-transition-duration: .35s;
+          transition-duration: .35s;
+  -webkit-transition-property: height, visibility;
+       -o-transition-property: height, visibility;
+          transition-property: height, visibility;
+}
+.panel-group {
+	border: 1px solid #ddd;
+}
+.panel {
+  margin-bottom: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.panel:last-child {
+	border: none;
+}
+.panel-body {
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  border-top: 1px solid #ddd;
+  background: #f2f2f2;
+}
+.panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: inherit;
+}
+.panel-title a {
+	color: #434343;
+	height: 3.6rem;
+	text-decoration: none;
+	padding: 0 2rem;
+	line-height: 1;
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: 1.4rem;
+	transition: border .2s ease;
+}
+.panel-heading a:hover {
+	border-left: 3px solid #ccc;
+}
+.panel-heading a[aria-expanded="true"] {
+	border-left: 3px solid #C90107;
+}

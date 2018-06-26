@@ -1,0 +1,88 @@
+/*TAB STYLES*/
+
+.nav-tabs {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-tabs:after {
+    display: table;
+	clear: both;
+	content: "";
+}
+
+.nav-tabs > li {
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: -1px;
+}
+
+.nav-tabs > li:last-child {
+	border-right: 1px solid #ddd;
+}
+
+.nav-tabs > li > a {
+    line-height: 1.5;
+    color: #888;
+    background: #f4f4f4;
+    position: relative;
+    display: block;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-top: 3px solid #aaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (min-width: 768px) {
+
+	.nav-tabs {
+		display: flex;
+	}
+
+	.nav-tabs > li {
+	  margin-bottom: -1px;
+	  border-right: none;
+	  width: auto;
+	  float: left;
+	}
+
+	.nav-tabs > li:last-child {
+		border-right: 1px solid #ddd;
+	}
+}
+
+.nav-tabs > li > a:hover {
+	text-decoration: none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    cursor: default;
+    background-color: #fff;
+}
+
+.nav-tabs > li.active {
+	border-bottom: 1px solid #fff;
+}
+
+.nav-tabs > li.active a {
+	color: #333;
+	border-top: 3px solid #c90107;
+}
+
+.tab-content {
+	padding: 2rem;
+	border: 1px solid #ddd;
+	z-index: 0;
+}
+
+.tab-content > .tab-pane {
+    display: none;
+}
+
+.tab-content > .active {
+    display: block;
+}

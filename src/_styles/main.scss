@@ -1,8 +1,25 @@
 // Normalize Styles
-@import 'node_modules/normalize.css/normalize';
+@import 'iaa-base';
 
 // Import Modules
-@import '../_modules/link/link';
+@import '../_modules/accordions/accordions';
+@import '../_modules/alerts/alerts';
+@import '../_modules/badges/badges';
+@import '../_modules/breadcrumbs/breadcrumbs';
+@import '../_modules/buttons/buttons';
+@import '../_modules/data-tables/data-tables';
+@import '../_modules/dropdown/dropdown';
+@import '../_modules/forms/forms';
+@import '../_modules/gridforms/gridforms';
+@import '../_modules/listviews/listviews';
+@import '../_modules/loaders/loaders';
+@import '../_modules/modals/modals';
+@import '../_modules/pagination/pagination';
+@import '../_modules/segment/segment';
+@import '../_modules/steps/steps';
+@import '../_modules/subnav/subnav';
+@import '../_modules/tabs/tabs';
+@import '../_modules/tooltips/tooltips';
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements

@@ -1,0 +1,13 @@
+mixin badges(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  div(class=spec.__class)&attributes(attributes)
+    span.badge.badge-lg.badge-sd.badge-gray Badge Large
+    span.badge.badge-md.badge-sd.badge-gray Badge Medium
+    span.badge.badge-sm.badge-sd.badge-gray Badge Small
+    span.badge.badge-sm.badge-sd.badge-green Badge Green
+    span.badge.badge-sm.badge-sd.badge-yellow Badge Yellow
+    span.badge.badge-sm.badge-sd.badge-red Badge Red
+    span.badge.badge-sm.badge-sd.badge-teal Badge Teal
+    span.badge.badge-sm.badge-sd.badge-orange Badge Orange

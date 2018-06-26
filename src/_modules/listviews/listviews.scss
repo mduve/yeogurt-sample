@@ -1,0 +1,197 @@
+.list-view {
+    display: table;
+    width: 100%;
+    background: #fff;
+    border:1px solid #ddd;
+}
+
+.list-shadow {
+    box-shadow: 0 .2rem .3rem 0 rgba(0, 0, 0, 0.2);
+    border:none;
+}
+
+.list-row  {
+    display: table-row;
+}
+
+.list-item {
+    display: table-cell;
+    padding: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+.list-row:last-child .list-item {
+    border-bottom: 0;
+}
+
+.list-header {
+    background: #656565;
+    color: #fff;
+    height: 3.6rem;
+}
+
+.list-header .list-item {
+    border-bottom: 0;
+    vertical-align: middle;
+    padding:1rem 1.5rem;
+}
+.list-header input[type="checkbox"] + label {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: top;
+    margin: .2rem 0 0 0;
+}
+
+.list-header input[type="checkbox"] + label {
+    top: -0.2rem;
+}
+
+.list-header h6 {
+    margin-bottom: 0;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.list-header .list-checkbox {
+    width: 5rem;
+    vertical-align: top;
+    position: relative;
+}
+
+.list-checkbox h6 {
+    position: absolute;
+    right: -1rem;
+    top: 1.2rem;
+}
+
+.list-header .list-img {
+    width: 12rem;
+}
+
+.list-view input[type="checkbox"]:not(:checked) + label,
+.list-view input[type="checkbox"]:checked + label {
+    padding-left:0;
+    margin-bottom:1.5rem;
+}
+
+/* Light header List View */
+
+.list-view.list-light .list-header {
+    background: #f2f2f2;
+    color: #434343;
+}
+
+/* Mobile List View */
+.m-list-view {
+	background: #fff;
+	border: 1px solid #ddd;
+	width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/* Header */
+.m-list-row.m-list-header {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    padding: 0;
+}
+
+.m-list-header .list-checkbox {
+    vertical-align: top;
+    padding: 1rem 1.5rem 0 1rem;
+    margin-right: 0;
+}
+
+.m-list-header input[type=checkbox] + label {
+    padding-left: 2.5rem;
+    padding-top: 0.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    vertical-align: top;
+}
+
+.m-list-header .btn {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border-left: 1px solid #ccc;
+    border-radius: 0;
+    vertical-align: top;
+    margin-right: 0;
+}
+
+.m-list-header .btn .icon {
+    fill: #1d67b2;
+    display: inline-block;
+}
+
+.m-list-header .btn-container {
+    flex-grow:0;
+    margin-left: auto;
+}
+
+/* Rows */
+.m-list-row {
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+}
+
+.m-list-row:not(.m-list-header) > .btn-container {
+    margin: 1rem 0 0.6rem 0;
+}
+
+.m-list-flex {
+    display: flex;
+}
+
+.m-list-row:last-child {
+	border-bottom: 0 none;
+}
+
+.m-list-checkbox {
+	flex: 0 0 25px;
+	align-self: center;
+	height: 22px;
+}
+
+.m-list-checkbox > label {
+    vertical-align: top;
+}
+
+.m-list-image {
+	flex: 0 0 96px;
+	margin-right: 10px;
+}
+
+.m-list-row.no-checkbox .m-list-image {
+	margin-left: 25px;
+}
+
+.m-list-data {
+	flex-grow: 1;
+	min-width: 0;
+}
+
+.m-list-data li {
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.m-list-arrow {
+	flex: 0 0 20px;
+	margin-left: 10px;
+	align-self: center;
+}
+
+.m-list-arrow .icon {
+    fill: #555555;
+    width: 1.4rem;
+    height: 1.4rem;
+    display: inline-block;
+}
